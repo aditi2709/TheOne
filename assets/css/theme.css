@@ -146,6 +146,9 @@
 .inter-img{
     padding: 0 55px;
 }
+.card-body{
+  padding: 1rem;
+}
 .SOS-card{
     background-image: url(../images/bannerimg.png);
     background-size: cover;
@@ -378,7 +381,7 @@ a:hover{
     font-size: 28px;
   }
   .curve-card-logo{
-    height: 56px;
+    height: 70px;
   }
   .pt-25{
     padding-top: 25px;
