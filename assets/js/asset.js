@@ -1,13 +1,14 @@
-$(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
-    if (!$(this).next().hasClass("show")) {
-      $(this).parents(".dropdown-menu").first().find(".show").removeClass("show");
-    }
-    var $subMenu = $(this).next(".dropdown-menu");
-    $subMenu.toggleClass("show");
-    $(this)
-      .parents("li.nav-item.dropdown.show")
-      .on("hidden.bs.dropdown", function (e) {
-        $(".dropdown-submenu .show").removeClass("show");
-      });
-    return false;
-  });
+$('.btn').click(function() {
+    $('.modal')
+        .prop('class', 'modal fade') // revert to default
+        .addClass( $(this).data('bottom') );
+    $('.modal').modal('show');
+});
+
+// $('.SOS-btn').click(() => {
+//     $('.bottom-sheet-wrapper').addClass('show-modal');
+//   })
+  
+//   $('.close, .backdrop').click(() => {
+//     $('.bottom-sheet-wrapper').removeClass('show-modal');
+//   })

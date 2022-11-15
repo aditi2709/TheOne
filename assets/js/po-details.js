@@ -1,20 +1,30 @@
-function viewfilter() {
-  document.getElementById("myForm").style.display = "block";
+var defaultLanguage = "english";
+var jsonUrl = "https://jsonbin.org/krmfla/language/";
+var barEl = document.getElementById("switchLanguageBar");
+
+getData(defaultLanguage);
+barEl.addEventListener("click", handleLanguage);
+
+//=== function kits ===
+function getData(language) {
+  var url = jsonUrl + language;
+  $('.content p').fadeOut();
+  $.getJSON(url, function(data) {
+    renderView(data);
+  });
 }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+function renderView(data) {
+  var titleEl = document.getElementById("title");
+  var descriptionEl = document.getElementById("description");
+  titleEl.innerText = data.title;
+  descriptionEl.innerText = data.description;
+  $('.content p').fadeIn();
 }
-$(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
-  if (!$(this).next().hasClass("show")) {
-    $(this).parents(".dropdown-menu").first().find(".show").removeClass("show");
+
+function handleLanguage(event) {
+  var attr = event.target.getAttribute("language");
+  if (attr) {
+    getData(attr)
   }
-  var $subMenu = $(this).next(".dropdown-menu");
-  $subMenu.toggleClass("show");
-  $(this)
-    .parents("li.nav-item.dropdown.show")
-    .on("hidden.bs.dropdown", function (e) {
-      $(".dropdown-submenu .show").removeClass("show");
-    });
-  return false;
-});
+}
