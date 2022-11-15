@@ -454,19 +454,19 @@ a:hover{
   }
 }
 .close{
- margin-top: 5px;
+ margin-top: 6px;
  margin-right: 30px;
  color: #FD9292;
 font-size: 32px;
-font-weight: 200;
+font-weight: 300;
 }
 .f32{
   font-size: 32px;
 }
 .modal{
   top:unset !important;
-  bottom: -72%;
-  border-radius :75px !important;
+  bottom: -78%;
+  border-radius :100px !important;
 }
 .modal-header{
   border-bottom: unset;
@@ -482,6 +482,9 @@ font-weight: 200;
 }
 .modal-content {
   background-color: unset !important;
+}
+.modal-footer{
+  border-top:unset !important;
 }
 .camera-icon{
   height: 140px;
