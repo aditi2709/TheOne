@@ -29,10 +29,10 @@
         <div class="row">
           <div class="col-md-6">
             <div class="welcome-wrapper">
-              <div class="welcome-txt">
+              <div class="welcome-txt" id="title">
                 Welcome to The One
               </div>
-              <div class="welcome-sub-txt">
+              <div class="welcome-sub-txt" id="sub-title">
                 Your connection to Mumbai City
               </div>
             </div>
@@ -46,16 +46,16 @@
         <div class="row w-100">
           <div class=" SOS-card">
             <div class="card-body">
-              <h5 class="card-title SOS-title">Eve Teasing SOS</h5>
-              <h6 class="card-subtitle mb-2 SOS-subtitle">Feel safe anytime</h6>
+              <h5 class="card-title SOS-title" id="eve-teasing-sos">Eve Teasing SOS</h5>
+              <h6 class="card-subtitle mb-2 SOS-subtitle" id="feel-safe-anytime">Feel safe anytime</h6>
               <!-- <a href="#" class="btn SOS-btn">Learn More</a> -->
-              <button type="button" class="btn SOS-btn" data-toggle="modal" data-target="#myModal">
+              <button type="button" class="btn SOS-btn" data-toggle="modal" data-target="#myModal" id ="learn-more">
                 Learn More
               </button>
             </div>
           </div>
         </div>
-        <div class="text">
+        <div class="text" id="select-preferred-convenience">
           Select preferred convenience
         </div>
         
@@ -67,8 +67,8 @@
                   <img src="./assets/images/bus-round.png" class="sos" alt="logo" />
                 </div>
                 <div class="sos-text">
-                  <div><span class="f28">BEST</span><span class="prawas">प्रवास</span></div>
-                  <div class="pawas-span">(prawas)</div>
+                  <div><span class="f28" id="BEST-प्रवास">BEST</span><span class="prawas">प्रवास</span></div>
+                  <div class="pawas-span" id="prawas">(prawas)</div>
                 </div>
                 <div class="install">
                   <div><img src="./assets/images/install_mobile.png" class="mobile-install" alt="logo" /></div>
@@ -86,10 +86,10 @@
                   <img src="./assets/images/sos.png" class="sos" alt="logo" />
                 </div>
                 <div class="sos-text">
-                  <div><span class="f28-white">EveTeasing</span></div>
+                  <div><span class="f28-white" id="eveteasing-SOS">EveTeasing</span></div>
                   <div class="f28-white">SOS !</div>
                 </div>
-                <div class="f-white-light">
+                <div class="f-white-light" id="eveteasing-SOS-text">
                   Experiencing eve teasing? Press here for SOS assistance!
                 </div>
               </div>
@@ -98,8 +98,8 @@
         </div>
 
         <div style="margin: 2rem;">
-          <div class="f20 mt-3">Nearby Me</div>
-          <div>
+          <div class="f20 mt-3" id="nearby-me">Nearby Me</div>
+          <div id="nearby-me-text">
             Available Areas within 5Km
           </div>
         </div>
@@ -115,14 +115,14 @@
                     </div>
                     <div class="col-md-7 no-padding">
                       <div class="black-text">
-                        <h6>Public Toilets</h6>
-                        <div class="grey-text w-150">Find nearby public toilets for women and men</div>
+                        <h6 id="public-toilets-title">Public Toilets</h6>
+                        <div class="grey-text w-150" id="public-toilets-subtext">Find nearby public toilets for women and men</div>
                       </div>
                     </div>  
                   </div>  
                 </div>
                 <div class="section g-bottom-section">
-                    <div class="white-text">20 Nearby toilets available</div>
+                    <div class="white-text" id="toilets-available-text">20 Nearby toilets available</div>
                 </div>
               </div>
             </a>  
@@ -138,14 +138,14 @@
                     </div>
                     <div class="col-md-7 no-padding">
                       <div class="black-text">
-                        <h6>Job Posts</h6>
-                        <div class="grey-text">Apply for jobs here!</div>
+                        <h6 id="job-posts">Job Posts</h6>
+                        <div class="grey-text" id="apply-job">Apply for jobs here!</div>
                       </div>
                     </div>  
                   </div> 
                 </div>
                 <div class="section b-bottom-section">
-                  <div class="white-text">30 Job post available nearby</div>
+                  <div class="white-text" id="jobs-post-available-text">30 Job post available nearby</div>
                 </div>
               </div>
             </a>  
@@ -157,7 +157,7 @@
               <div class="row p-4">
                 <div class="col-md-6">
                   <div class ="d-flex head-text">
-                    <h6>Survey & Polls</h6>
+                    <h6 id="survey-polls">Survey & Polls</h6>
                     <img src="./assets/images/open_in_new.png" class="open"/>
                   </div>
                   <div class="sub-div-text grey-text">
@@ -168,7 +168,7 @@
                   <div class="d-flex justify-content-end">
                     <img src="./assets/images/batch.png"/>
                     <div class ="jumbo-text">
-                      <div class="small-black-text">
+                      <div class="small-black-text" id="survey-points-text">
                         All time survey points
                       </div>
                       <h6 class="">
@@ -188,7 +188,7 @@
               <div class="pink-background">
                 <div class="d-flex justify-content-center">
                   <img src="./assets/images/camera.png" class="camera p-l-r-20" />
-                  <div>Take surveys and earn guaranteed cash backs on</div>
+                  <div id="survey-footer-text">Take surveys and earn guaranteed cash backs on</div>
                   <img src="./assets/images/phonepe.png" class="camera p-l-r-20" />
                   <img src="./assets/images/gpay.png" class="camera" />
                 </div>
@@ -202,7 +202,7 @@
             <div class="card card-4">
               <div class="d-flex">
                 <img src="./assets/images/crossword.png" class="img-icon" />
-                <a href = "./comming_soon.html" target="_blank" class="card-text">Play Online Games</a>
+                <a href = "./comming_soon.html" target="_blank" class="card-text" id="game-card-text">Play Online Games</a>
               </div>  
             </div>
           </div> 
@@ -210,7 +210,7 @@
             <div class="card card-4">
               <div class="d-flex">
                 <img src="./assets/images/mumbai.png" class="img-icon" />
-                <a href = "https://www.google.com/maps/search/?api=1&query=Mumbai,+Maharashtra" target="_blank" class="card-text">Explore Mumbai</a>
+                <a href = "https://www.google.com/maps/search/?api=1&query=Mumbai,+Maharashtra" target="_blank" class="card-text" id="mumbai-card-text">Explore Mumbai</a>
               </div>  
             </div>
           </div>  
@@ -236,8 +236,8 @@
                     <img src="./assets/images/cctv.png" class="camera-icon" />
                   </div>  
                   <div>
-                    <h6 class ="white-text-cctv pt-5">EveTeasing SOS !</h6>
-                    <div class="white-text">You are being monitored from the CCTV, please 
+                    <h6 class ="white-text-cctv pt-5" id="sos-popup-title">EveTeasing SOS !</h6>
+                    <div class="white-text" id="sos-popup-desc">You are being monitored from the CCTV, please 
                       <br/>
                       stay within the Bus Shelter until you feel safe</div>
                   </div>  

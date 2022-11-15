@@ -111,14 +111,14 @@
     background-repeat:no-repeat, no-repeat;
 }  
 .sec-wrapper{
-    margin: 2rem 2rem;
+    margin: 2rem 0;
 }    
 .welcome-wrapper{
     padding: 35px 0;
     margin: 0 2rem;
 }
 .welcome-txt{
-    font-size: 32px;
+    font-size: 44px;
     line-height: 16px;
     display: flex;
     align-items: center;
@@ -130,7 +130,8 @@
     letter-spacing: 0.1px;
     color: #FFFCFB;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    font-size: 20px;
+    font-size: 28px;
+    line-height: 2.6;
 }
 .flex-dis{
     display: flex;
@@ -157,7 +158,7 @@
     /* font-family: 'Roboto'; */
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 44px;
     line-height: 21px;
     /* identical to box height */
     display: flex;
@@ -170,8 +171,8 @@
     /* font-family: 'Roboto'; */
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 14px;
+    font-size: 28px;
+    line-height: 1.8;
     display: flex;
     align-items: center;
     letter-spacing: 0.5px;
@@ -180,12 +181,13 @@
 }
 .SOS-btn{
     /* padding: 10px 24px; */
-    margin-top: 20px;
-    width: 130px;
-    height: 40px;
+    margin-top: 2px;
+    width: 160px;
+    height: 50px;
     background: #FFFFFF;
     border-radius: 100px;
     color: #D10C0C;
+    font-size: 26px;
 }
 .m-3rem{
     margin: 0 3rem;
@@ -194,6 +196,8 @@
     text-transform: uppercase;
     color: #263238;
     margin: 0 3rem;
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 .no-padding{
     padding: unset;
@@ -238,7 +242,7 @@
     font-weight: 500;
 }
 .prawas{
-    font-size: 28px;
+    font-size: 42px;
     color: #742525;
     font-weight: 400;
     padding-left: 5px;
@@ -247,14 +251,14 @@
     font-size: 24px;
 }
 .sos{
-    height: 88px;
+    height: 100px;
     padding-top: 14px;
 }
 .mobile-install{
   height: 34px;
 }
 .install{
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     justify-content: center;
 }
@@ -417,7 +421,7 @@ a:hover{
   }
   
   .f28 {
-    font-size: 28px;
+    font-size: 42px;
     color: #000000;
     font-weight: 500;
 }
