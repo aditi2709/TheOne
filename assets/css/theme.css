@@ -43,7 +43,7 @@
     color: #FFFFFF;
 }
 .lang-text h6{
-    font-size: 24px !important;
+    font-size: 42px !important;
 }
 .flex-center{
     display: flex;
@@ -57,15 +57,15 @@
     border: 1px solid #FFFFFF;
     border-radius: 52px;
     box-sizing: border-box;
-    padding: 24px;
-    width: 350px; 
+    padding: 40px;
+    width: 510px; 
     background-color : transparent;
     color: #FFFFFF;
     margin-top: 24px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 34px;
     line-height: 16px;
     text-align: center;
 }
@@ -82,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 28px;
 }
 .footer {
     color: #ffffff;
@@ -268,7 +268,7 @@
     padding-top: 14px;
 }
 .mobile-install{
-  height: 34px;
+  /* height: 34px; */
 }
 .install{
     /* padding: 20px; */
@@ -277,7 +277,7 @@
     margin: 28px 0;
 }
 .ins-txt{
-    font-size: 20px;
+    font-size: 37px;
     padding: 5px;
     color: #F64E19;
 }
@@ -465,7 +465,8 @@ font-weight: 200;
 }
 .modal{
   top:unset !important;
-  bottom: -62%;
+  bottom: -72%;
+  border-radius :75px !important;
 }
 .modal-header{
   border-bottom: unset;
@@ -485,6 +486,10 @@ font-weight: 200;
 .camera-icon{
   height: 140px;
   width: 180px;
+}
+.modal-backdrop{
+  background: rgba(41, 40, 40, 0.74) !important;
+  filter: blur(5px);
 }
 /* .modal{
   top: 1195px !important;
