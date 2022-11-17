@@ -133,8 +133,8 @@
     letter-spacing: 0.1px;
     color: #FFFCFB;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    font-size: 28px;
-    line-height: 1.8;
+    font-size: 26px;
+    line-height: 1.9;
 }
 .flex-dis{
     display: flex;
@@ -186,14 +186,14 @@
     color: #FF7878;
 }
 .SOS-btn{
-    /* padding: 10px 24px; */
-    margin-top: 2px;
-    width: 160px;
-    height: 50px;
-    background: #FFFFFF;
-    border-radius: 100px;
-    color: #D10C0C;
-    font-size: 26px;
+  padding: 5PX 25px;
+  margin-top: 2px;
+  width: 185px;
+  height: 50px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  color: #D10C0C;
+  font-size: 26px;
 }
 .m-3rem{
     margin: 0 3rem;
@@ -380,6 +380,22 @@ a:hover{
     font-weight: 500;
     font-size: 28px;
   }
+  .box-grey-text{
+    color:#263238;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  .grey-text-cctv{
+    color:#263238;
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+  }
   .curve-card-logo{
     height: 70px;
   }
@@ -400,15 +416,20 @@ a:hover{
   .w-200{
     width: 200px;
   }
+  .orange-btn{
+    color: #F64E19 !important;
+    font-weight: 800 !important;
+    
+  }
   .small-black-text{
     color: #000000;
     font-size: 24px;
   }
   .card-4 {
     margin-top: 35px;
-    padding: 30px;
+    padding: 22px;
     border-radius: 15px;
-    height: 120px;
+    height: 122px;
     /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   }
@@ -472,13 +493,21 @@ font-weight: 300;
   border-bottom: unset;
 }
 .modal-dialog{
-  background-color: #D10C0C;
   width: 100% !important;
   top: unset;
   bottom: 0%;
   max-width: 1080px;
   left: 50%;
   transform: translate(-50%,0) !important;
+  height: 100%;
+}
+.bg-red{
+  background-color: #D10C0C;
+}
+.bg-white{
+  background-color: #ffffff;
+  color: #263238;
+  ;
 }
 .modal-content {
   background-color: unset !important;
@@ -493,6 +522,12 @@ font-weight: 300;
 .modal-backdrop{
   background: rgba(41, 40, 40, 0.74) !important;
   filter: blur(5px);
+}
+.batch-image{
+  height: 65px;
+}
+.h-35{
+  height: 35px;
 }
 /* .modal{
   top: 1195px !important;

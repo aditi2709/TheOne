@@ -45,11 +45,11 @@
         </div>
         <div class="row w-100">
           <div class=" SOS-card">
-            <div class="card-body">
+            <div class="card-body"style="padding-left: 40px;">
               <h5 class="card-title SOS-title" id="eve-teasing-sos">Eve Teasing SOS</h5>
               <h6 class="card-subtitle mb-2 SOS-subtitle" id="feel-safe-anytime">Feel safe anytime</h6>
               <!-- <a href="#" class="btn SOS-btn">Learn More</a> -->
-              <button type="button" class="btn SOS-btn" data-toggle="modal" data-target="#myModal" id ="learn-more">
+              <button type="button" class="btn SOS-btn" data-toggle="modal" data-target="#learn-more-modal" id ="learn-more">
                 Learn More
               </button>
             </div>
@@ -122,7 +122,7 @@
                   </div>  
                 </div>
                 <div class="section g-bottom-section">
-                    <div class="white-text" id="toilets-available-text">20 Nearby toilets available</div>
+                    <div class="white-text" id="toilets-available-text">Click here to search</div>
                 </div>
               </div>
             </a>  
@@ -139,7 +139,7 @@
                     <div class="col-md-7 no-padding">
                       <div class="black-text">
                         <h6 id="job-posts">Job Posts</h6>
-                        <div class="grey-text" id="apply-job">Apply for jobs here!</div>
+                        <div class="grey-text" id="apply-job">AClick here to apply</div>
                       </div>
                     </div>  
                   </div> 
@@ -166,7 +166,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="d-flex justify-content-end">
-                    <img src="./assets/images/batch.png"/>
+                    <img src="./assets/images/batch.png" class="batch-image">
                     <div class ="jumbo-text">
                       <div class="small-black-text" id="survey-points-text">
                         All time survey points
@@ -187,10 +187,10 @@
               </div>
               <div class="pink-background">
                 <div class="d-flex justify-content-center">
-                  <img src="./assets/images/camera.png" class="camera p-l-r-20" />
+                  <img src="./assets/images/camera.png" class="camera p-l-r-20 h-35" />
                   <div id="survey-footer-text" class="f-24">Take surveys and earn guaranteed cash backs on</div>
-                  <img src="./assets/images/phonepe.png" class="camera p-l-r-20" />
-                  <img src="./assets/images/gpay.png" class="camera" />
+                  <img src="./assets/images/phonepe.png" class="camera p-l-r-20 h-35" />
+                  <img src="./assets/images/gpay.png" class="camera h-35" />
                 </div>
                 
               </div>
@@ -202,7 +202,12 @@
             <div class="card card-4">
               <div class="d-flex">
                 <img src="./assets/images/crossword.png" class="img-icon" />
-                <a href = "./comming_soon.html" target="_blank" class="card-text" id="game-card-text">Play Online Games</a>
+                <a href = "./comming_soon.html" target="_blank" class="card-text" id="game-card-text">
+                  <div>
+                    <div>Play Online</div>
+                    <div>Games</div>
+                  </div>  
+                </a>
               </div>  
             </div>
           </div> 
@@ -210,7 +215,12 @@
             <div class="card card-4">
               <div class="d-flex">
                 <img src="./assets/images/mumbai.png" class="img-icon" />
-                <a href = "https://www.google.com/maps/search/?api=1&query=Mumbai,+Maharashtra" target="_blank" class="card-text" id="mumbai-card-text">Explore Mumbai</a>
+                <a href = "https://www.google.com/maps/search/?api=1&query=Mumbai,+Maharashtra" target="_blank" class="card-text" id="mumbai-card-text">
+                  <div>
+                    <div>Explore</div>
+                    <div>Mumbai</div>
+                  </div>
+                </a>
               </div>  
             </div>
           </div>  
@@ -219,8 +229,8 @@
        
         <!-- modal --> 
         
-        <div class="modal fade">
-          <div class="modal-dialog">
+        <div class="modal fade" id="sos-modal">
+          <div class="modal-dialog bg-red">
             <div class="modal-content">
               
               <div class="modal-body">
@@ -236,10 +246,35 @@
                   </div>  
                 </div>  
               </div>
-              <div class="modal-footer">
+              <div class="modal-footer d-flex justify-content-end">
                 <button type="button" class="close" data-dismiss="modal">CLOSE</button>
                 <a href="tel:100" class="white-text f32" >CALL 100</a>
 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="learn-more-modal">
+          <div class="modal-dialog bg-white">
+            <div class="modal-content">
+              
+              <div class="modal-body">
+                <div class="sos-wrapper ">
+                  <div class="d-flex justify-content-center align-item-center">
+                    <img src="./assets/images/cctv.png" class="camera-icon" />
+                  </div>  
+                  <div>
+                    <h6 class ="grey-text-cctv pt-5" id="sos-popup-title">EveTeasing SOS !</h6>
+                    <div class="box-grey-text" id="sos-popup-desc">Incase you experience eve teasing while in the bus shelter premises click on the Eve Teasing SOS button. A loud alarm will be raised and 
+                       
+                      <br/>
+                      <span class="black-bold-text">you will be monitored by CCTV.</span></div>
+                  </div>  
+                </div>  
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="close orange-btn" data-dismiss="modal">CLOSE</button>
               </div>
             </div>
           </div>

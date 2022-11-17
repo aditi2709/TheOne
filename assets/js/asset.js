@@ -1,8 +1,15 @@
-$('.btn').click(function() {
-    $('.modal')
+$('.card-2').click(function() {
+    $('#sos-modal')
         .prop('class', 'modal fade') // revert to default
         .addClass( $(this).data('bottom') );
-    $('.modal').modal('show');
+    $('#sos-modal').modal('show');
+});
+
+$('.SOS-btn').click(function() {
+  $('#learn-more-modal')
+      .prop('class', 'modal fade') // revert to default
+      .addClass( $(this).data('bottom') );
+  $('#learn-more-modal').modal('show');
 });
 
 
