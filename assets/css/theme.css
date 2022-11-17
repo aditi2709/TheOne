@@ -474,19 +474,24 @@ a:hover{
       margin:  unset !important;
   }
 }
-.close{
- margin-top: 6px;
- margin-right: 30px;
- color: #FD9292;
-font-size: 32px;
-font-weight: 300;
+
+.close {
+  margin-top: 10px;
+  margin-right: 30px;
+  color: #FD9292;
+  font-size: 36px;
+  font-weight: 300;
+  opacity: unset !important;
+}
+.close:focus{
+  outline: unset !important;
 }
 .f32{
   font-size: 32px;
 }
 .modal{
   top:unset !important;
-  bottom: -78%;
+  bottom: -70%;
   border-radius :100px !important;
 }
 .modal-header{
@@ -501,6 +506,9 @@ font-weight: 300;
   transform: translate(-50%,0) !important;
   height: 100%;
 }
+.modal-content{
+  border: unset !important;
+}
 .bg-red{
   background-color: #D10C0C;
 }
@@ -514,6 +522,7 @@ font-weight: 300;
 }
 .modal-footer{
   border-top:unset !important;
+  margin: 0 25px;
 }
 .camera-icon{
   height: 140px;
