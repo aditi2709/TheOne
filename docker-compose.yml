@@ -3,7 +3,7 @@ services:
   web-server:
     build: .
     image: my-nginx
-    container_name: my-running-nginx
+    container_name: the-one
     ports:
       - "80:80"
     volumes:
