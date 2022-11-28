@@ -502,7 +502,7 @@ a:hover{
 }
 .modal{
   top:unset !important;
-  bottom: -66%;
+  bottom: -65%;
   border-radius :100px !important;
 }
 .modal-header{
