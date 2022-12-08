@@ -16,7 +16,7 @@ const options = {
   will: {
     topic: 'device/command/Mumbai_Bus_Shelter',
     payload: 'Connection Closed abnormally..!',
-    qos: 0,
+    qos: 2,
     retain: true
   },
 }
@@ -32,13 +32,13 @@ client.on('error', (err) => {
 var publishMsg = function(topic, message){
   console.log('SOS click')
   // Publish
-  client.publish(topic, message, { qos: 0, retain: false })
+  client.publish(topic, message, { qos: 2, retain: false })
 }
 
 client.on('connect', () => {
   console.log('Client connected:' + clientId)
   // Subscribe
-  client.subscribe('device/command/Mumbai_Bus_Shelter', { qos: 0 }, function (err) {
+  client.subscribe('device/command/Mumbai_Bus_Shelter', { qos: 2 }, function (err) {
     if (!err) {
       // client.publish('device/command/Mumbai_Bus_Shelter', 'play1')
     }})
