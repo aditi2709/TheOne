@@ -18,8 +18,28 @@
     <script src="./assets/packages/js/jquery-3.5.1.min.js"></script>
     <script src="./assets/packages/js/popper.min.js"></script>
     <script src="./assets/packages/js/bootstrap.min.js"></script>
-
+    <script type = 'module' src="./assets/js/lang.js"></script>
     <link rel="stylesheet" href="./assets/css/theme.css" />
+    <script type="text/javascript">
+        window.onload = function(){
+          
+          const barEl = document.getElementById("lang-option");
+          console.log(barEl);
+
+          barEl.addEventListener("click", handleLanguage);
+        
+          function handleLanguage(event) {
+            console.log('hi');
+            var value = event.target
+            var attr = event.target.getAttribute("language");
+            console.log(attr);
+            if (attr) {
+              localStorage.setItem("lang", attr);
+            }
+          }
+        }; 
+      
+    </script>
     
    
   </head>
@@ -36,15 +56,15 @@
           <div class ="lang-text">
             <h6>Select preferRed language</h6>
           </div>
-          <div class ="lang-option">
-            <div class="flex-center">
-              <a href="main.html" target="_blank"><button type="button" class="btn btn-lg round active">English</button></a>
+          <div class ="lang-option" id="lang-option">
+            <div class="flex-center" >
+              <a href="main.html"  id="english"><button type="button" language="english" class="btn btn-lg round active">English</button></a>
             </div>
-            <div class="flex-center">
-              <a href="#" target="_blank"><button type="button" class="btn btn-transparent btn-lg round">मराठी</button></a>
+            <div class="flex-center" >
+              <a href="main.html"  id="marathi"><button type="button" language="marathi" class="btn btn-transparent btn-lg round">मराठी</button></a>
             </div>  
-            <div class="flex-center">
-              <a href="#" target="_blank"><button type="button" class="btn btn-lg round">हिंदी </button></a>
+            <div class="flex-center" >
+              <a href="main.html"  id="hindi"><button type="button" language="hindi" class="btn btn-lg round">हिंदी </button></a>
             </div>  
           </div>
         </div>
