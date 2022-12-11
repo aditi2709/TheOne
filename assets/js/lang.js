@@ -14,6 +14,7 @@ window.onload = function(){
         method: 'GET',
         headers: {
           accept: 'application/json',
+
         },
       });
   
@@ -33,16 +34,100 @@ window.onload = function(){
     console.log(language);
     var url
     if (language == 'hindi'){
-      url = "Hindi.json"
+      // url = "Hindi.json"
+      data = {
+        title:"द वन में आपका स्वागत है",
+        subTitle:"मुंबई शहर से आपका कनेक्शन",
+        eveTeasingSos:"Eve Teasing SOS",
+        feelSafeAnytime:"किसी भी समय सुरक्षित महसूस करें",
+        learnMore:"और अधिक जानें",
+        selectPreferredConvenience:"पसंदीदा सुविधा का चयन करें",
+        BEST:"बेस्ट प्रवास",
+        prawas:"prawas",
+        eveteasingSOS:"EveTeasing SOS",
+        eveteasingSOStext:"ईव टीजिंग का अनुभव कर रहे हैं? एसओएस सहायता के लिए यहां दबाएं!",
+        nearbyMe:"मेरे पास",
+        nearbyMeText:"5 किलोमीटर के भीतर उपलब्ध क्षेत्र",
+        publicToiletsTitle:"सार्वजनिक शौचालय",
+        publicToiletsSubtext:"महिलाओं और पुरुषों के लिए पास के सार्वजनिक शौचालयों का पता लगाएं",
+        toiletsAvailableText:"पास में शौचालय उपलब्ध है",
+        jobPosts:"नौकरी पोस्ट",
+        applyJob:"यहां नौकरी के लिए आवेदन करें!",
+        jobsPostAvailableText:"जॉब पोस्ट पास में उपलब्ध है",
+        surveyPolls:"सर्वेक्षण और मतदान",
+        surveyPointsText:"हर समय सर्वेक्षण बिंदु",
+        surveyFooterText:"सर्वेक्षण करें और गारंटीड कैश बैक अर्जित करें",
+        gameCardText:"ऑनलाइन गेम्स खेलें",
+        mumbaiCardText:"मुंबई का अन्वेषण करें",
+        sosPopupTitle:"EveTeasing SOS !",
+        sosPopupDesc:"सीसीटीवी से आप पर नजर रखी जा रही है, कृपया जब तक आप सुरक्षित महसूस न करें तब तक बस शेल्टर के भीतर ही रहें"
+      }
+      renderView(data);
     }
     else if(language == 'english'){
-      url = "English.json"
+      // url = "English.json"
+      data={
+        title:"Welcome to The One",
+        subTitle:"Your connection to Mumbai City",
+        eveTeasingSos:"Eve Teasing SOS",
+        feelSafeAnytime:"Feel safe anytime",
+        learnMore:"Learn More",
+        selectPreferredConvenience:"Select preferred convenience",
+        BEST:"BEST travel",
+        prawas:"prawas",
+        eveteasingSOS:"EveTeasing SOS",
+        eveteasingSOStext:"Experiencing eve teasing? Press here for SOS assistance!",
+        nearbyMe:"Nearby Me",
+        nearbyMeText:"Available Areas within 5Km",
+        publicToiletsTitle:"Public Toilets",
+        publicToiletsSubtext:"Find nearby public toilets for women and men",
+        toiletsAvailableText:"Nearby toilets available",
+        jobPosts:"Job Posts",
+        applyJob:"Apply for jobs here!",
+        jobsPostAvailableText:"Job post available nearby",
+        surveyPolls:"Survey & Polls",
+        surveyPointsText:"All time survey points",
+        surveyFooterText:"Take surveys and earn guaranteed cash backs on",
+        gameCardText:"Play Online Games",
+        mumbaiCardText:" Explore Mumbai",
+        sosPopupTitle:"EveTeasing SOS !",
+        sosPopupDesc:"You are being monitored from the CCTV, please stay within the Bus Shelter until you feel safe"
+      }  
+      renderView(data);
     }
     else{
-      url = "Marathi.json"
+      // url = "Marathi.json"
+      data= {
+        title:"द वन मध्ये आपले स्वागत आहे",
+        subTitle:"तुमचे मुंबई शहराशी कनेक्शन",
+        eveTeasingSos:"Eve Teasing SOS",
+        feelSafeAnytime:"कधीही सुरक्षित वाटते",
+        learnMore:"अधिक जाणून घ्या",
+        selectPreferredConvenience:"पसंतीची सोय निवडा",
+        BEST:"बेस्ट प्रवास",
+        prawas:"prawas",
+        eveteasingSOS:"EveTeasing SOS",
+        eveteasingSOStext:"इव्ह टीझिंगचा अनुभव घेत आहात? SOS सहाय्यासाठी येथे दाबा!",
+        nearbyMe:"माझ्या जवळ",
+        nearbyMeText:"5 किलोमीटरच्या आत उपलब्ध क्षेत्रे",
+        publicToiletsTitle:"सार्वजनिक शौचालये",
+        publicToiletsSubtext:"महिला आणि पुरुषांसाठी जवळील सार्वजनिक शौचालये शोधा",
+        toiletsAvailableText:"जवळपास शौचालये उपलब्ध आहेत",
+        jobPosts:"जॉब पोस्ट्स",
+        applyJob:"येथे नोकरीसाठी अर्ज करा!",
+        jobsPostAvailableText:"जवळपास नोकरीची पोस्ट उपलब्ध आहे",
+        surveyPolls:"सर्वेक्षण आणि मतदान",
+        surveyPointsText:"सर्व वेळ सर्वेक्षण गुण",
+        surveyFooterText:"सर्वेक्षण करा आणि गॅरंटीड कॅश बॅक मिळवा",
+        gameCardText:"ऑनलाइन गेम्स खेळा",
+        mumbaiCardText:"मुंबई एक्सप्लोर करा",
+        sosPopupTitle:"EveTeasing SOS !",
+        sosPopupDesc:"तुमच्यावर CCTV द्वारे नजर ठेवली जात आहे, कृपया तुम्हाला सुरक्षित वाटत नाही तोपर्यंत बस शेल्टरमध्ये रहा"
+      }
+      renderView(data);
     }
-    console.log(url);
-    getUser(url);
+    // console.log(url);
+    // getUser(url);
     // const data = new Promise((resolve, reject) => {
     //   fetch(url, {
     //     method: "GET",
@@ -65,7 +150,7 @@ window.onload = function(){
     //   // renderView(data);
     // });
   }
-  
+
   //render view with json element
   function renderView(data) {
     var title = document.getElementById("title");
@@ -73,7 +158,7 @@ window.onload = function(){
     var eveTeasingSos = document.getElementById("eve-teasing-sos");
     var feelSafeAnytime = document.getElementById("feel-safe-anytime");
     var learnMore = document.getElementById("learn-more");
-    var selectPreferredConvenience = document.getElementById("select-preferred-convenience");
+    // var selectPreferredConvenience = document.getElementById("select-preferred-convenience");
     var BEST = document.getElementById("BEST-प्रवास");
     var prawas = document.getElementById("prawas");
     var eveteasingSOS = document.getElementById("eveteasing-SOS");
@@ -93,31 +178,32 @@ window.onload = function(){
     var mumbaiCardText = document.getElementById("mumbai-card-text");
     var sosPopupTitle = document.getElementById("sos-popup-title");
     var sosPopupDesc = document.getElementById("sos-popup-desc");
+    
     title.innerText = data.title;
-    subTitle.innerText = data.sub-title;
-    eveTeasingSos.innerText = data.eve-teasing-sos;
-    feelSafeAnytime.innerText = data.feel-safe-anytime;
-    learnMore.innerText = data.learn-more;
-    selectPreferredConvenience.innerText = data.select-preferred-convenience;
-    BEST.innerText = data.BEST-प्रवास;
+    subTitle.innerText = data.subTitle;
+    eveTeasingSos.innerText = data.eveTeasingSos;
+    feelSafeAnytime.innerText = data.feelSafeAnytime;
+    learnMore.innerText = data.learnMore;
+    // selectPreferredConvenience.innerText = data.selectPreferredConvenience;
+    BEST.innerText = data.BEST;
     prawas.innerText = data.prawas;
-    eveteasingSOS.innerText = data.eveteasing-SOS;
-    eveteasingSOSText.innerText = data.eveteasing-SOS-text;
-    nearbyMe.innerText = data.nearby-me;
-    nearbyMeText.innerText = data.nearby-me-text;
-    publicToiletsTitle.innerText = data.public-toilets-title;
-    publicToiletsSubtext.innerText = data.public-toilets-subtext;
-    toiletsAvailableText.innerText = data.toilets-available-text;
-    jobPosts.innerText = data.job-posts;
-    applyJob.innerText = data.apply-job;
-    jobsPostAvailableText.innerText = data.jobs-post-available-text;
-    surveyPolls.innerText = data.survey-polls;
-    surveyPointsText.innerText = data.survey-points-text;
-    surveyFooterText.innerText = data.survey-footer-text;
-    gameCardText.innerText = data.game-card-text;
-    mumbaiCardText.innerText = data.mumbai-card-text;
-    sosPopupTitle.innerText = data.sos-popup-title;
-    sosPopupDesc.innerText = data.sos-popup-desc;
+    eveteasingSOS.innerText = data.eveteasingSOS;
+    eveteasingSOSText.innerText = data.eveteasingSOStext;
+    nearbyMe.innerText = data.nearbyMe;
+    nearbyMeText.innerText = data.nearbyMeText;
+    publicToiletsTitle.innerText = data.publicToiletsTitle;
+    publicToiletsSubtext.innerText = data.publicToiletsSubtext;
+    toiletsAvailableText.innerText = data.toiletsAvailableText;
+    jobPosts.innerText = data.jobPosts;
+    applyJob.innerText = data.applyJob;
+    jobsPostAvailableText.innerText = data.jobsPostAvailableText;
+    surveyPolls.innerText = data.surveyPolls;
+    surveyPointsText.innerText = data.surveyPointsText;
+    surveyFooterText.innerText = data.surveyFooterText;
+    gameCardText.innerText = data.gameCardText;
+    mumbaiCardText.innerText = data.mumbaiCardText;
+    sosPopupTitle.innerText = data.sosPopupTitle;
+    sosPopupDesc.innerText = data.sosPopupDesc;
     // localStorage.clear();
     // $('.content p').fadeIn();
   }
