@@ -189,7 +189,7 @@
 .SOS-btn{
   padding: 5PX 25px;
   margin-top: 2px;
-  width: 185px;
+  /* width: 185px; */
   height: 50px;
   background: #FFFFFF;
   border-radius: 100px;
@@ -220,7 +220,7 @@
     display: block;
     margin: 0 auto;
     border-radius: 15px;
-    height: 410px;
+    height: 425px;
 }
 .card-2{
     /* padding-left: 1.5rem !important; 
@@ -230,7 +230,7 @@
     margin: 0 auto;
     background: linear-gradient(0deg, #D10C0C, #D10C0C), #FFFFFF;
     border-radius: 15px;
-    height: 410px;
+    height: 425px;
 }
 
 .sos-text{
@@ -307,7 +307,7 @@ a:hover{
 #g-card{
     position: relative;
     /* width : 140px; */
-    height: 220px;
+    height: 260px;
     background: #0CC277;
     border-radius: 15px;
     overflow:hidden;
@@ -315,7 +315,7 @@ a:hover{
 #b-card{
     position: relative;
     /* width : 140px; */
-    height: 220px;
+    height: 260px;
     background: #1967D2;
     border-radius: 15px;
     overflow:hidden;

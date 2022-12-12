@@ -44,7 +44,7 @@ window.onload = function(){
         selectPreferredConvenience:"पसंदीदा सुविधा का चयन करें",
         BEST:"बेस्ट प्रवास",
         prawas:"prawas",
-        eveteasingSOS:"EveTeasing SOS",
+        eveteasingSOS:"EveTeasing",
         eveteasingSOStext:"ईव टीजिंग का अनुभव कर रहे हैं? एसओएस सहायता के लिए यहां दबाएं!",
         nearbyMe:"मेरे पास",
         nearbyMeText:"5 किलोमीटर के भीतर उपलब्ध क्षेत्र",
@@ -54,13 +54,15 @@ window.onload = function(){
         jobPosts:"नौकरी पोस्ट",
         applyJob:"यहां नौकरी के लिए आवेदन करें!",
         jobsPostAvailableText:"जॉब पोस्ट पास में उपलब्ध है",
+        contributions:"योगदान",
         surveyPolls:"सर्वेक्षण और मतदान",
         surveyPointsText:"हर समय सर्वेक्षण बिंदु",
         surveyFooterText:"सर्वेक्षण करें और गारंटीड कैश बैक अर्जित करें",
         gameCardText:"ऑनलाइन गेम्स खेलें",
         mumbaiCardText:"मुंबई का अन्वेषण करें",
         sosPopupTitle:"EveTeasing SOS !",
-        sosPopupDesc:"सीसीटीवी से आप पर नजर रखी जा रही है, कृपया जब तक आप सुरक्षित महसूस न करें तब तक बस शेल्टर के भीतर ही रहें"
+        sosPopupDesc:"सीसीटीवी से आप पर नजर रखी जा रही है, कृपया जब तक आप सुरक्षित महसूस न करें तब तक बस शेल्टर के भीतर ही रहें",
+        sosPopupDesc2:"यदि आप बस शेल्टर परिसर में छेड़खानी का अनुभव करते हैं तो ईव टीजिंग एसओएस बटन पर क्लिक करें। एक जोर का अलार्म बजाया जाएगा और सीसीटीवी से आपकी निगरानी की जाएगी।"
       }
       renderView(data);
     }
@@ -75,7 +77,7 @@ window.onload = function(){
         selectPreferredConvenience:"Select preferred convenience",
         BEST:"BEST travel",
         prawas:"prawas",
-        eveteasingSOS:"EveTeasing SOS",
+        eveteasingSOS:"EveTeasing",
         eveteasingSOStext:"Experiencing eve teasing? Press here for SOS assistance!",
         nearbyMe:"Nearby Me",
         nearbyMeText:"Available Areas within 5Km",
@@ -85,13 +87,15 @@ window.onload = function(){
         jobPosts:"Job Posts",
         applyJob:"Apply for jobs here!",
         jobsPostAvailableText:"Job post available nearby",
+        contributions:"Contributions",
         surveyPolls:"Survey & Polls",
         surveyPointsText:"All time survey points",
         surveyFooterText:"Take surveys and earn guaranteed cash backs on",
         gameCardText:"Play Online Games",
         mumbaiCardText:" Explore Mumbai",
         sosPopupTitle:"EveTeasing SOS !",
-        sosPopupDesc:"You are being monitored from the CCTV, please stay within the Bus Shelter until you feel safe"
+        sosPopupDesc:"You are being monitored from the CCTV, please stay within the Bus Shelter until you feel safe",
+        sosPopupDesc2:"Incase you experience eve teasing while in the bus shelter premises click on the Eve Teasing SOS button. A loud alarm will be raised and you will be monitored by CCTV."
       }  
       renderView(data);
     }
@@ -106,7 +110,7 @@ window.onload = function(){
         selectPreferredConvenience:"पसंतीची सोय निवडा",
         BEST:"बेस्ट प्रवास",
         prawas:"prawas",
-        eveteasingSOS:"EveTeasing SOS",
+        eveteasingSOS:"EveTeasing",
         eveteasingSOStext:"इव्ह टीझिंगचा अनुभव घेत आहात? SOS सहाय्यासाठी येथे दाबा!",
         nearbyMe:"माझ्या जवळ",
         nearbyMeText:"5 किलोमीटरच्या आत उपलब्ध क्षेत्रे",
@@ -116,13 +120,15 @@ window.onload = function(){
         jobPosts:"जॉब पोस्ट्स",
         applyJob:"येथे नोकरीसाठी अर्ज करा!",
         jobsPostAvailableText:"जवळपास नोकरीची पोस्ट उपलब्ध आहे",
+        contributions:"योगदान",
         surveyPolls:"सर्वेक्षण आणि मतदान",
         surveyPointsText:"सर्व वेळ सर्वेक्षण गुण",
         surveyFooterText:"सर्वेक्षण करा आणि गॅरंटीड कॅश बॅक मिळवा",
         gameCardText:"ऑनलाइन गेम्स खेळा",
         mumbaiCardText:"मुंबई एक्सप्लोर करा",
         sosPopupTitle:"EveTeasing SOS !",
-        sosPopupDesc:"तुमच्यावर CCTV द्वारे नजर ठेवली जात आहे, कृपया तुम्हाला सुरक्षित वाटत नाही तोपर्यंत बस शेल्टरमध्ये रहा"
+        sosPopupDesc:"तुमच्यावर CCTV द्वारे नजर ठेवली जात आहे, कृपया तुम्हाला सुरक्षित वाटत नाही तोपर्यंत बस शेल्टरमध्ये रहा",
+        sosPopupDesc2:"बस निवारा परिसरात तुम्हाला इव्ह टीझिंगचा अनुभव आल्यास इव्ह टीझिंग SOS बटणावर क्लिक करा. मोठ्याने अलार्म वाजवला जाईल आणि सीसीटीव्हीद्वारे तुमच्यावर नजर ठेवली जाईल."
       }
       renderView(data);
     }
@@ -171,6 +177,7 @@ window.onload = function(){
     var jobPosts = document.getElementById("job-posts");
     var applyJob = document.getElementById("apply-job");
     var jobsPostAvailableText = document.getElementById("jobs-post-available-text");
+    var contributions = document.getElementById("contributions");
     var surveyPolls = document.getElementById("survey-polls");
     var surveyPointsText = document.getElementById("survey-points-text");
     var surveyFooterText = document.getElementById("survey-footer-text");
@@ -178,6 +185,7 @@ window.onload = function(){
     var mumbaiCardText = document.getElementById("mumbai-card-text");
     var sosPopupTitle = document.getElementById("sos-popup-title");
     var sosPopupDesc = document.getElementById("sos-popup-desc");
+    var sosPopupDesc2 = document.getElementById("sos-popup-desc-2");
     
     title.innerText = data.title;
     subTitle.innerText = data.subTitle;
@@ -197,6 +205,7 @@ window.onload = function(){
     jobPosts.innerText = data.jobPosts;
     applyJob.innerText = data.applyJob;
     jobsPostAvailableText.innerText = data.jobsPostAvailableText;
+    contributions.innerText = data.contributions;
     surveyPolls.innerText = data.surveyPolls;
     surveyPointsText.innerText = data.surveyPointsText;
     surveyFooterText.innerText = data.surveyFooterText;
@@ -204,6 +213,7 @@ window.onload = function(){
     mumbaiCardText.innerText = data.mumbaiCardText;
     sosPopupTitle.innerText = data.sosPopupTitle;
     sosPopupDesc.innerText = data.sosPopupDesc;
+    sosPopupDesc2.innerText = data.sosPopupDesc2;
     // localStorage.clear();
     // $('.content p').fadeIn();
   }
