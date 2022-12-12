@@ -7,32 +7,11 @@ window.onload = function(){
   getData(localStorage.getItem("lang"));
   // barEl.addEventListener("click", handleLanguage);
 
-  //read json file
-  async function getUser(url) {
-    try {
-      const response = await fetch(url, {
-        method: 'GET',
-        headers: {
-          accept: 'application/json',
-
-        },
-      });
-  
-      if (!response.ok) {
-        throw new Error(`Error! status: ${response.status}`);
-      }
-  
-      const result = await response.json();
-      return result;
-    } catch (err) {
-      console.log(err);
-    }
-  }
 
   //=== function get json file ===
   function getData(language) {
     console.log(language);
-    var url
+    let data
     if (language == 'hindi'){
       // url = "Hindi.json"
       data = {
@@ -132,29 +111,7 @@ window.onload = function(){
       }
       renderView(data);
     }
-    // console.log(url);
-    // getUser(url);
-    // const data = new Promise((resolve, reject) => {
-    //   fetch(url, {
-    //     method: "GET",
-    //     headers: {
-    //         "Access-Control-Allow-Origin": "*",
-    //         "Content-Type": "text/plain"
-    //     },//"mode" : "no-cors",
-    //     //body: {"id" : document.getElementById('saada').value}
-    //     }).then(respond => {
-    //         resolve(respond.json())
-    //       }).catch(err => {
-    //         reject(err)
-    //       })
-    //   })
-      
-    //   console.log(data)
-    // fetch(url).then(response => response.json()).then(data => console.log(data)).catch(error => console.log(error));
-    // $.getJSON( url, function(data) {
-    //   console.log(data);
-    //   // renderView(data);
-    // });
+
   }
 
   //render view with json element
