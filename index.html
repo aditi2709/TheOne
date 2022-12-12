@@ -22,11 +22,16 @@
     <link rel="stylesheet" href="./assets/css/theme.css" />
     <script type="text/javascript">
         window.onload = function(){
-          
-          const barEl = document.getElementById("lang-option");
+          let language
+          // const barEl = document.getElementById("lang-option");
+          const barEl = document.getElementsByClassName('language');
           console.log(barEl);
 
-          barEl.addEventListener("click", handleLanguage);
+          for (var i = 0; i < barEl.length; i++) {
+            barEl[i].addEventListener('click', handleLanguage, false);
+          }
+
+          // barEl.addEventListener("click", handleLanguage);
         
           function handleLanguage(event) {
             console.log('hi');
@@ -35,6 +40,7 @@
             console.log(attr);
             if (attr) {
               localStorage.setItem("lang", attr);
+              // language = attr
             }
           }
         }; 
@@ -58,13 +64,13 @@
           </div>
           <div class ="lang-option" id="lang-option">
             <div class="flex-center" >
-              <a href="main.html" target="_blank" id="english"><button type="button" language="english" class="btn btn-lg round active">English</button></a>
+              <a class ="language" href="main.html" target="_blank" id="english"><button type="button" language="english" class="btn btn-lg round active">English</button></a>
             </div>
             <div class="flex-center" >
-              <a href="main.html" target="_blank" id="marathi"><button type="button" language="marathi" class="btn btn-transparent btn-lg round">मराठी</button></a>
+              <a  class ="language" href="main.html" target="_blank" id="marathi"><button type="button" language="marathi" class="btn btn-transparent btn-lg round">मराठी</button></a>
             </div>  
             <div class="flex-center" >
-              <a href="main.html" target="_blank" id="hindi"><button type="button" language="hindi" class="btn btn-lg round">हिंदी </button></a>
+              <a class ="language" href="main.html" target="_blank" id="hindi"><button type="button" language="hindi" class="btn btn-lg round">हिंदी </button></a>
             </div>  
           </div>
         </div>
