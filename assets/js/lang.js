@@ -1,11 +1,8 @@
 window.onload = function(){
-  // var defaultLanguage = "english";
-  // var jsonUrl = "language.json";
-  // const barEl = document.getElementById("lang-option");
-  // console.log(barEl);
-
-  getData(localStorage.getItem("lang"));
-  // barEl.addEventListener("click", handleLanguage);
+  
+  const searchParams = new URLSearchParams(window.location.search).get('language');
+  console.log(searchParams);
+  getData(searchParams);
 
 
   //=== function get json file ===
