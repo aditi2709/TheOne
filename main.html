@@ -17,7 +17,9 @@
   <script src="./assets/packages/js/popper.min.js"></script>
   <script src="./assets/packages/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
-  <script src="mqtt.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+  <script src="mqttws31.js"></script>
+  <!-- <script src="mqtt.js"></script> -->
   <script src="./assets/js/lang.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script> -->
@@ -82,7 +84,8 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card  card-2" onclick="publishMsg('device/command/Mumbai_Bus_Shelter', 'play1')">
+            <!-- <div class="card  card-2" onclick="publishMsg('device/command/Mumbai_Bus_Shelter', 'play1')"> -->
+            <div class="card  card-2" onclick="publishMsg()">
               <div class="card-body">
                 <div class="d-flex justify-content-center">
                   <img src="./assets/images/sos.png" class="sos" alt="logo" />

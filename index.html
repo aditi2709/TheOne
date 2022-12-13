@@ -19,6 +19,9 @@
     <script src="./assets/packages/js/popper.min.js"></script>
     <script src="./assets/packages/js/bootstrap.min.js"></script>
     <script type = 'module' src="./assets/js/lang.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+    <!-- <script src="mqtt.js"></script> -->
+    <script src="mqttws31.js"></script>
     <link rel="stylesheet" href="./assets/css/theme.css" />
     <script type="text/javascript">
         window.onload = function(){
@@ -34,10 +37,10 @@
           // barEl.addEventListener("click", handleLanguage);
         
           function handleLanguage(event) {
-            console.log('hi');
+            // console.log('hi');
             var value = event.target
             var attr = event.target.getAttribute("language");
-            console.log(attr);
+            // console.log(attr);
             if (attr) {
               localStorage.setItem("lang", attr);
             }
