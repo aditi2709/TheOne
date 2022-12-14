@@ -16,9 +16,13 @@ $('.SOS-btn').click(function() {
 function getMobileOperatingSystem() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     console.log(userAgent);
+    console.log(platform.name);
+    // alert(platform.name);
     if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
     {
-      //return 'iOS';   
+      if (platform.name != 'Safari'){
+        alert('open in safari for better experience');
+      }  
       var newUrl = $('.install a').attr('href').replace('#', 'https://apps.apple.com/in/app/best-%E0%A4%AA-%E0%A4%B0%E0%A4%B5-%E0%A4%B8-prawas/id1479505664');
       $('.install a').attr('href', newUrl);
      //$(".install a").attr("href", "https://apps.apple.com/in/app/best-%E0%A4%AA-%E0%A4%B0%E0%A4%B5-%E0%A4%B8-prawas/id1479505664")    
