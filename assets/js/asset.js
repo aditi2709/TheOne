@@ -17,15 +17,14 @@ function getMobileOperatingSystem() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     console.log(userAgent);
     console.log(platform.name);
-    if (platform.name == 'Safari'){
-      console.log('open in safari for better experience');
-      alert('open in safari for better experience');
-    }
+    
     if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
     {
-      // if (platform.name == 'Safari'){
-      //   alert('open in safari for better experience');
-      // }  
+      console.log('============');
+      console.log($("#hide-div"));
+      $("#hide-div").removeClass("d-none");  
+      $("#hide-div").addClass("d-block");
+      // $("#hide-div").css({display: "block"});
       var newUrl = $('.install a').attr('href').replace('#', 'https://apps.apple.com/in/app/best-%E0%A4%AA-%E0%A4%B0%E0%A4%B5-%E0%A4%B8-prawas/id1479505664');
       $('.install a').attr('href', newUrl);
      //$(".install a").attr("href", "https://apps.apple.com/in/app/best-%E0%A4%AA-%E0%A4%B0%E0%A4%B5-%E0%A4%B8-prawas/id1479505664")    
@@ -33,6 +32,7 @@ function getMobileOperatingSystem() {
     else if( userAgent.match( /Android/i ) )
     {
       //return 'Android';
+      $("#hide-div").css({display: "none"});
       var newUrl = $('.install a').attr('href').replace('#', 'https://play.google.com/store/apps/details?id=com.dimts.best.bestapplication&hl=en_IN&gl=US');
       $('.install a').attr('href', newUrl);
      // $(".install a").attr("href", "https://play.google.com/store/apps/details?id=com.dimts.best.bestapplication&hl=en_IN&gl=US")
@@ -45,8 +45,9 @@ function getMobileOperatingSystem() {
     //   $(".install a").attr("href", "https://play.google.com/store/apps/details?id=com.dimts.best.bestapplication&hl=en_IN&gl=US")
     }
 }
-  
-getMobileOperatingSystem();
+$( document ).ready(function() {
+  getMobileOperatingSystem();
+})
 
 // $('.SOS-btn').click(() => {
 //     $('.bottom-sheet-wrapper').addClass('show-modal');
