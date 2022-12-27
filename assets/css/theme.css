@@ -346,7 +346,7 @@ a:hover{
   #o-card{
     position: relative;
     /* width : 140px; */
-    height: 220px;
+    height: 260px;
     background: #F64E19;
     border-radius: 15px;
     overflow:hidden;
@@ -354,7 +354,7 @@ a:hover{
   #v-card{
     position: relative;
     /* width : 140px; */
-    height: 220px;
+    height: 260px;
     background: #CA59FF;
     border-radius: 15px;
     overflow:hidden;

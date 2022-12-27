@@ -18,8 +18,8 @@ window.onload = function(){
         feelSafeAnytime:"किसी भी समय सुरक्षित महसूस करें",
         learnMore:"और अधिक जानें",
         selectPreferredConvenience:"पसंदीदा सुविधा का चयन करें",
-        BEST:"बेस्ट प्रवास",
-        prawas:"prawas",
+        // BEST:"बेस्ट प्रवास",
+        // prawas:"prawas",
         eveteasingSOS:"EveTeasing",
         eveteasingSOStext:"ईव टीजिंग का अनुभव कर रहे हैं? एसओएस सहायता के लिए यहां दबाएं!",
         nearbyMe:"मेरे पास",
@@ -51,8 +51,8 @@ window.onload = function(){
         feelSafeAnytime:"Feel safe anytime",
         learnMore:"Learn More",
         selectPreferredConvenience:"Select preferred convenience",
-        BEST:"BEST travel",
-        prawas:"prawas",
+        // BEST:"BEST travel",
+        // prawas:"prawas",
         eveteasingSOS:"EveTeasing",
         eveteasingSOStext:"Experiencing eve teasing? Press here for SOS assistance!",
         nearbyMe:"Nearby Me",
@@ -84,8 +84,8 @@ window.onload = function(){
         feelSafeAnytime:"कधीही सुरक्षित वाटते",
         learnMore:"अधिक जाणून घ्या",
         selectPreferredConvenience:"पसंतीची सोय निवडा",
-        BEST:"बेस्ट प्रवास",
-        prawas:"prawas",
+        // BEST:"बेस्ट प्रवास",
+        // prawas:"prawas",
         eveteasingSOS:"EveTeasing",
         eveteasingSOStext:"इव्ह टीझिंगचा अनुभव घेत आहात? SOS सहाय्यासाठी येथे दाबा!",
         nearbyMe:"माझ्या जवळ",
@@ -119,8 +119,8 @@ window.onload = function(){
     var feelSafeAnytime = document.getElementById("feel-safe-anytime");
     var learnMore = document.getElementById("learn-more");
     // var selectPreferredConvenience = document.getElementById("select-preferred-convenience");
-    var BEST = document.getElementById("BEST-प्रवास");
-    var prawas = document.getElementById("prawas");
+    // var BEST = document.getElementById("BEST-प्रवास");
+    // var prawas = document.getElementById("prawas");
     var eveteasingSOS = document.getElementById("eveteasing-SOS");
     var eveteasingSOSText = document.getElementById("eveteasing-SOS-text");
     var nearbyMe = document.getElementById("nearby-me");
@@ -147,8 +147,8 @@ window.onload = function(){
     feelSafeAnytime.innerText = data.feelSafeAnytime;
     learnMore.innerText = data.learnMore;
     // selectPreferredConvenience.innerText = data.selectPreferredConvenience;
-    BEST.innerText = data.BEST;
-    prawas.innerText = data.prawas;
+    // BEST.innerText = data.BEST;
+    // prawas.innerText = data.prawas;
     eveteasingSOS.innerText = data.eveteasingSOS;
     eveteasingSOSText.innerText = data.eveteasingSOStext;
     nearbyMe.innerText = data.nearbyMe;
