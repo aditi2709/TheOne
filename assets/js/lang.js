@@ -30,6 +30,12 @@ window.onload = function(){
         jobPosts:"नौकरी पोस्ट",
         applyJob:"यहां नौकरी के लिए आवेदन करें!",
         jobsPostAvailableText:"जॉब पोस्ट पास में उपलब्ध है",
+        fun:"मज़ा और सीखो",
+        showEvent:"आस-पास के शो और ईवेंट खोजें।",
+        bookNowText:"अभी बुक करें",
+        citizen:"नागरिक कल्याण",
+        govtScheme:"सभी सरकारी योजनाओं और लाभों की खोज करें।",
+        knowMoreText:"अधिक जानकारी के लिए यहां क्लिक करें",
         contributions:"योगदान",
         surveyPolls:"सर्वेक्षण और मतदान",
         surveyPointsText:"हर समय सर्वेक्षण बिंदु",
@@ -63,6 +69,12 @@ window.onload = function(){
         jobPosts:"Job Posts",
         applyJob:"Apply for jobs here!",
         jobsPostAvailableText:"Job post available nearby",
+        fun:"Fun & Learn",
+        showEvent:"Find nearby shows & events.",
+        bookNowText:"Book now",
+        citizen:"Citizen Welfare",
+        govtScheme:"Discover all government schemes and benefits.",
+        knowMoreText:"Click here to know more",
         contributions:"Contributions",
         surveyPolls:"Survey & Polls",
         surveyPointsText:"All time survey points",
@@ -96,6 +108,12 @@ window.onload = function(){
         jobPosts:"जॉब पोस्ट्स",
         applyJob:"येथे नोकरीसाठी अर्ज करा!",
         jobsPostAvailableText:"जवळपास नोकरीची पोस्ट उपलब्ध आहे",
+        fun:'मस्ती एवं सीखना',
+        showEvent:'पास के शो & इवेंट खोजें।',
+        bookNowText:'अभी बुक करें',
+        citizen:"नागरिक कल्याण",
+        govtScheme:"सब सरकारी योजना आ लाभ के खोज करू।",
+        knowMoreText:"अधिक जानकारी के लेल एतय क्लिक करू",
         contributions:"योगदान",
         surveyPolls:"सर्वेक्षण आणि मतदान",
         surveyPointsText:"सर्व वेळ सर्वेक्षण गुण",
@@ -131,6 +149,12 @@ window.onload = function(){
     var jobPosts = document.getElementById("job-posts");
     var applyJob = document.getElementById("apply-job");
     var jobsPostAvailableText = document.getElementById("jobs-post-available-text");
+    var fun = document.getElementById("fun");
+    var showEvent = document.getElementById("showEvent");
+    var bookNowText = document.getElementById("bookNowText");
+    var citizen = document.getElementById("citizen");
+    var govtScheme = document.getElementById("govtScheme");
+    var knowMoreText = document.getElementById("knowMoreText");
     var contributions = document.getElementById("contributions");
     var surveyPolls = document.getElementById("survey-polls");
     var surveyPointsText = document.getElementById("survey-points-text");
@@ -159,6 +183,12 @@ window.onload = function(){
     jobPosts.innerText = data.jobPosts;
     applyJob.innerText = data.applyJob;
     jobsPostAvailableText.innerText = data.jobsPostAvailableText;
+    fun.innerText = data.fun;
+    showEvent.innerText = data.showEvent;
+    bookNowText.innerText = data.bookNowText;
+    citizen.innerText = data.citizen;
+    govtScheme.innerText = data.govtScheme;
+    knowMoreText.innerText = data.knowMoreText;
     contributions.innerText = data.contributions;
     surveyPolls.innerText = data.surveyPolls;
     surveyPointsText.innerText = data.surveyPointsText;
