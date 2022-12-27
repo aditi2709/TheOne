@@ -12,8 +12,8 @@ window.onload = function(){
     if (language == 'hindi'){
       // url = "Hindi.json"
       data = {
-        title:"द वन में आपका स्वागत है",
-        subTitle:"मुंबई शहर से आपका कनेक्शन",
+        title:"कम्यूटर सुविधा",
+        subTitle:"सेवाएं",
         eveTeasingSos:"Eve Teasing SOS",
         feelSafeAnytime:"किसी भी समय सुरक्षित महसूस करें",
         learnMore:"और अधिक जानें",
@@ -51,8 +51,8 @@ window.onload = function(){
     else if(language == 'english'){
       // url = "English.json"
       data={
-        title:"Welcome to The One",
-        subTitle:"Your connection to Mumbai City",
+        title:"Commuter convenience",
+        subTitle:"Services",
         eveTeasingSos:"Eve Teasing SOS",
         feelSafeAnytime:"Feel safe anytime",
         learnMore:"Learn More",
@@ -90,8 +90,8 @@ window.onload = function(){
     else{
       // url = "Marathi.json"
       data= {
-        title:"द वन मध्ये आपले स्वागत आहे",
-        subTitle:"तुमचे मुंबई शहराशी कनेक्शन",
+        title:"आवागमन के सुविधा",
+        subTitle:"सेवाएँ",
         eveTeasingSos:"Eve Teasing SOS",
         feelSafeAnytime:"कधीही सुरक्षित वाटते",
         learnMore:"अधिक जाणून घ्या",
