@@ -212,7 +212,7 @@
 .SOS-btn{
   padding: 5PX 25px;
   margin-top: 2px;
-  width: 185px;
+  /* width: 185px; */
   height: 50px;
   background: #FFFFFF;
   border-radius: 100px;
@@ -243,7 +243,7 @@
     display: block;
     margin: 0 auto;
     border-radius: 15px;
-    height: 410px;
+    height: 425px;
 }
 .card-2{
     /* padding-left: 1.5rem !important; 
@@ -253,7 +253,7 @@
     margin: 0 auto;
     background: linear-gradient(0deg, #D10C0C, #D10C0C), #FFFFFF;
     border-radius: 15px;
-    height: 410px;
+    height: 425px;
 }
 
 .sos-text{
@@ -330,7 +330,7 @@ a:hover{
 #g-card{
     position: relative;
     /* width : 140px; */
-    height: 220px;
+    height: 260px;
     background: #0CC277;
     border-radius: 15px;
     overflow:hidden;
@@ -338,7 +338,7 @@ a:hover{
 #b-card{
     position: relative;
     /* width : 140px; */
-    height: 220px;
+    height: 260px;
     background: #1967D2;
     border-radius: 15px;
     overflow:hidden;
@@ -599,6 +599,31 @@ a:hover{
 .scrolling-wrapper{
 	overflow-x: auto;
 }
+.alert-div{
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.alert-wrapper{
+  width: 570px;
+  background: #F74E19;
+  border-radius: 55px;
+  padding: 20px;
+  margin: 0 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.font{
+  font-size: 20px;
+  color: #ffffff;
+}
+.notification-icon{
+  height: 50px;
+  width: 50px;
+}
 /* .modal{
   top: 1195px !important;
 } */
@@ -667,3 +692,45 @@ a:hover{
 
 
  */
+
+
+
+.quote {
+  background-color: #F74E19;
+  border-radius: 55px;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  font-size: 28px;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  margin: 0 55px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Reset */
+blockquote {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote::after {
+  border-color: transparent #F74E19 transparent transparent;
+  border-image: none;
+  border-style: solid;
+  border-width: 40px;
+  top: 58px;
+  content: " ";
+  display: block;
+  right: -6%;
+  position: relative;
+}
