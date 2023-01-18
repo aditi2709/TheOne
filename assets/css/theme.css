@@ -26,7 +26,8 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 36%;
+    top: 38%;
+    height: 275px;
     /* top: 480px; */
 }
 .sub-logo{
@@ -733,4 +734,22 @@ blockquote::after {
   display: block;
   right: -6%;
   position: relative;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .lang_wrapper {
+    top: 63%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .lang_wrapper {
+    top: 63%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px){
+  .lang_wrapper {
+    top: 63%;
+  }
 }
